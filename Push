@@ -1,0 +1,5 @@
+git init
+git remote add origin https://github.com/USERNAME/btc_alert.git
+git add .
+git commit -m "Initial BTC alert system"
+git push -u origin main
