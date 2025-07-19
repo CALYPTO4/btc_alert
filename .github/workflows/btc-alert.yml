@@ -2,11 +2,12 @@ name: BTC Alert Email
 
 on:
   schedule:
-    - cron: '*/5 * * *'  # รันทุก 5 นาที
+    - cron: '*/5 * * * *'  # รันทุก 5 นาที
   workflow_dispatch:
 
 jobs:
   email_alert:
+    if: false  # <-- หยุดการรันทั้งหมด
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
